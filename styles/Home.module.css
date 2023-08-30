@@ -125,3 +125,43 @@
     font-size: clamp(3rem, 12vw, 4rem);
   }
 }
+
+@media (min-width: 2560px) {
+  .section {
+    position: relative;
+    top: var(--header-height-tablet);
+    height: calc(100vh - var(--header-height-tablet));
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  .buttonContainer {
+    gap: 2.5rem;
+  }
+  .h1 {
+    font-size: clamp(12rem, 25vw, 15rem);
+    color: var(--header-bg);
+    font-family: var(--font-logo);
+    line-height: clamp(4rem, 8vw, 6rem);
+    margin-bottom: 0.5rem;
+  }
+  .pLineHeight {
+    line-height: 4rem;
+  }
+  .p1 {
+    color: var(--colored-text-yellow);
+    font-size: clamp(9rem, 15vw, 9rem);
+  }
+  .p2 {
+    color: var(--colored-text-green);
+    font-size: 6rem;
+  }
+  .p3 {
+    color: var(--colored-text-blue);
+    font-size: 6rem;
+  }
+  .p4 {
+    color: var(--colored-text-purple);
+    font-size: 6rem;
+  }
+}

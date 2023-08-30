@@ -33,3 +33,9 @@
     font-size: clamp(2rem, 8vw, 2.5rem);
   }
 }
+
+@media (min-width: 2560px) {
+  .roundedButton {
+    font-size: 4rem;
+  }
+}
