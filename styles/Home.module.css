@@ -53,7 +53,6 @@
     justify-content: center;
   }
   .buttonContainer {
-    margin-top: 3rem;
     gap: 2.5rem;
   }
   .h1 {
@@ -61,7 +60,6 @@
     color: var(--header-bg);
     font-family: var(--font-logo);
     line-height: 3rem;
-    margin-bottom: 0.5rem;
   }
 
   .pLineHeight {
@@ -74,7 +72,6 @@
   .p2 {
     color: var(--colored-text-green);
     font-size: 2.5rem;
-    margin-top: 1rem;
   }
   .p3 {
     color: var(--colored-text-blue);
@@ -143,7 +140,6 @@
     color: var(--header-bg);
     font-family: var(--font-logo);
     line-height: clamp(4rem, 8vw, 6rem);
-    margin-bottom: 0.5rem;
   }
   .pLineHeight {
     line-height: 4rem;

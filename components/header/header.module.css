@@ -8,12 +8,14 @@
 
 .logo {
   font-family: var(--font-logo);
+  color: var(--background-body);
 }
 .ul {
   display: flex;
 }
 .liDesktop {
   font-family: var(--font-text);
+  color: var(--background-body);
 }
 
 @media (max-width: 400px) {
@@ -94,7 +96,7 @@
   .spanLogo {
     font-size: clamp(3rem, 4vw, 7rem);
     text-align: center;
-    line-height: 0.7rem;
+    line-height: 1rem;
   }
   .menuMobile {
     margin-left: auto;
