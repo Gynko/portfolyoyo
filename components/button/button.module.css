@@ -1,0 +1,35 @@
+.roundedButtonContainer {
+  background-color: var(--button-pink);
+  border-radius: 12px;
+  padding: 0.4rem 0.7rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.roundedButtonContainer:hover {
+  transform: scale(1.1) translateZ(0);
+}
+
+.roundedButton {
+  text-decoration: none;
+  font-size: 2rem;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: var(--font-text);
+  z-index: 0;
+}
+
+@media (max-width: 400px) {
+  .roundedButton {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .roundedButton {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+}

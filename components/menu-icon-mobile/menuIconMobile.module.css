@@ -1,0 +1,42 @@
+/* styles/Dropdown.module.css */
+.menuIcon {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.nav {
+  height: var(--header-height-mobile);
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  display: block;
+  width: 1.8rem;
+  height: 5px;
+  margin: 6px auto;
+  background-color: var(--colored-text-grey);
+}
+
+.dropdownMenu {
+  display: none;
+}
+
+.dropdownLink {
+  height: 3rem;
+  background-color: var(--dropdown-link);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdownMenu.active {
+  display: flex;
+  position: absolute;
+  bottom: var(--header-height-mobile);
+  width: 100%;
+  left: 0;
+  flex-direction: column;
+  z-index: 1;
+}

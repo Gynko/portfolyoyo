@@ -1,7 +1,18 @@
+@font-face {
+  font-family: "Jomhuria-Regular";
+  src: url("../public/fonts/Jomhuria-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Jost-Regular";
+  src: url("../public/fonts/Jost-Regular.ttf") format("truetype");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--background-body);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -15,12 +26,48 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+ul {
+  list-style-type: none;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+nav,
+button,
+span,
+a,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+:root {
+  /* Sizes */
+  --header-height-mobile: 3rem;
+  --header-height-tablet: clamp(4rem, 7vw, 8rem);
+
+  /* Colors */
+  --background-body: #262335;
+  --header-bg: #ff9b3f;
+  --dropdown-link: #ffd1a7;
+
+  --colored-text-yellow: #fafd85;
+  --colored-text-green: #9fdb96;
+  --colored-text-blue: #6fb5e8;
+  --colored-text-purple: #ca98e2;
+  --colored-text-grey: #2f2924;
+
+  --button-pink: #ee76a8;
+  /* Fonts */
+  --font-logo: "Jomhuria-Regular";
+  --font-text: "Jost-Regular";
 }

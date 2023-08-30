@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Yoann Godiet <!-- omit in toc -->
 
-## Getting Started
+# 1. Table of content <!-- omit in toc -->
+- [1. Goal](#1-goal)
+- [2. Brainstorming](#2-brainstorming)
+  - [2.1. Possible features made possible by the web](#21-possible-features-made-possible-by-the-web)
+- [3. UX Design](#3-ux-design)
 
-First, run the development server:
+# 1. Goal
+The goal of this portfolio is to showcase who I am and what I can do, for potential recruitors to see if we would be a good fit.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# 2. Brainstorming
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+It's worth thinking about how to accomplish this goal. 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+For decades, we have had resumes and cover letters to fulfill this goal. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+But what is it that websites and interactivity can bring to the table?
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 2.1. Possible features made possible by the web
 
-## Learn More
+1. Having search possibilities
+2. Having video to present myself = a way to meet me without having already met me - And give at once a good feel of who I am
+3. Having interactivity: buttons, sliders, dropdowns to contain information
+4. Forms to communicate, polls
+5. Newsletters
+6. Social media direct links
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# 3. UX Design
