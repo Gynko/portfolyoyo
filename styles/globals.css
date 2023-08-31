@@ -50,24 +50,35 @@ li {
   align-items: center;
 }
 
+button {
+  border: none;
+}
 :root {
   /* Sizes */
   --header-height-mobile: 3rem;
   --header-height-tablet: clamp(4rem, 7vw, 8rem);
 
   /* Colors */
-  --background-body: #262335;
-  --header-bg: #ff9b3f;
+  --background-body: #27262e;
+  --header-bg: black;
   --dropdown-link: #ffd1a7;
 
-  --colored-text-yellow: #fafd85;
-  --colored-text-green: #9fdb96;
-  --colored-text-blue: #6fb5e8;
-  --colored-text-purple: #ca98e2;
-  --colored-text-grey: #2f2924;
+  --text-logo: #e9dbd0;
+
+  --colored-text-yellow: #ecd269;
+  --colored-text-green: #83d776;
+  --colored-text-blue: #5cade7;
+  --colored-text-purple: #ca88e8;
+  --colored-text-orange: #f37a46;
+
+  --colored-text-grey: #1e1d1c;
+  --colored-text-whiteish: #ece9e6;
 
   --button-pink: #ee76a8;
   /* Fonts */
   --font-logo: "Jomhuria-Regular";
   --font-text: "Jost-Regular";
+
+  /* Border Radius */
+  --border-radius: 12px;
 }

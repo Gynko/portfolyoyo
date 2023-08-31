@@ -1,42 +1,148 @@
-.roundedButtonContainer {
-  background-color: var(--button-pink);
-  border-radius: 12px;
-  padding: 0.4rem 0.7rem;
-  text-align: center;
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.default {
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  margin: 10px;
+  font-size: 16px;
+  border: 2px solid #4caf50;
   cursor: pointer;
-  transition: transform 0.3s ease;
-  will-change: transform;
-  backface-visibility: hidden;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-.roundedButtonContainer:hover {
-  transform: scale(1.1) translateZ(0);
+.default:hover {
+  background-color: #f1f1f1;
 }
 
-.roundedButton {
-  text-decoration: none;
-  font-size: 2rem;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: var(--font-text);
-  z-index: 0;
-  color: var(--background-body);
+/* Pressed Button Styles */
+.pressed {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 28px;
+  margin: 10px;
+  font-size: 16px;
+  border: 2px solid #4caf50;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 400px) {
-  .roundedButton {
-    font-size: 1.5rem;
-  }
+.pressed:hover {
+  background-color: #45a049;
 }
 
-@media (min-width: 1024px) {
-  .roundedButton {
-    font-size: clamp(2rem, 8vw, 2.5rem);
-  }
+/* ...existing button styles */
+
+.entry {
+  background-color: white;
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 10px;
 }
 
-@media (min-width: 2560px) {
-  .roundedButton {
-    font-size: 4rem;
-  }
+.entryHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.entryName {
+  font-weight: bold;
+}
+
+.entryDate {
+  font-style: italic;
+  margin-left: auto;
+}
+
+.entryDescription {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.entrySkills {
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+.skillsContainer {
+  display: block;
+}
+.skill {
+  background-color: pink;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+/* Button styles */
+.button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: black;
+}
+
+.button:active {
+  background-color: black;
+  color: white;
+}
+
+/* List and entry styles */
+.categoryList {
+  margin-bottom: 20px;
+}
+
+.entry {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: white;
+  border: 1px solid gray;
+  color: black;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.entryName {
+  font-weight: bold;
+  float: left;
+}
+
+.entryDate {
+  float: right;
+}
+
+.entryDescription {
+  clear: both;
+  margin-top: 10px;
+}
+
+.skillsAcquired {
+  margin-top: 10px;
+}
+
+.skill {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 5px;
+  background-color: pink;
+}
+
+.grade {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: pink;
 }

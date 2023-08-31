@@ -16,7 +16,7 @@
   width: 1.8rem;
   height: 5px;
   margin: 6px auto;
-  background-color: var(--colored-text-grey);
+  background-color: var(--colored-text-whiteish);
 }
 
 .dropdownMenu {
@@ -25,7 +25,7 @@
 
 .dropdownLink {
   height: 3rem;
-  background-color: var(--dropdown-link);
+  background-color: var(--colored-text-whiteish);
   display: flex;
   justify-content: center;
   align-items: center;

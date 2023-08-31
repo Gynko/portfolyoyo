@@ -35,13 +35,13 @@ export default function MenuIconMobile() {
       </button>
       <ul className={`${styles.dropdownMenu} ${isActive ? styles.active : ""}`}>
         <li className={styles.dropdownLink}>
-          <a href="#">Link 1</a>
+          <a href="#">Home</a>
         </li>
         <li className={styles.dropdownLink}>
-          <a href="#">Link 2</a>
+          <a href="#">Resume</a>
         </li>
         <li className={styles.dropdownLink}>
-          <a href="#">Link 3</a>
+          <a href="#">Contact</a>
         </li>
       </ul>
     </nav>

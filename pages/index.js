@@ -1,7 +1,7 @@
 import styles from "../styles/Home.module.css";
 import imageDev from "../public/images/dev-midjourney.webp";
 import Image from "next/image";
-import Button from "../components/button/button";
+import ButtonLink from "../components/buttonLink/buttonLink";
 
 export default function Home() {
   return (
@@ -39,8 +39,8 @@ export default function Home() {
         height={250}
       />
       <div className={styles.buttonContainer}>
-        <Button text="Resume" path="/resume" />
-        <Button text="Contact" path="/contact" />
+        <ButtonLink text="Resume" path="/resume" />
+        <ButtonLink text="Contact" path="/contact" />
       </div>
     </section>
   );

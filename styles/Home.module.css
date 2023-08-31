@@ -2,6 +2,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  width: 100%;
 }
 
 .textCommon {
@@ -11,7 +12,7 @@
 }
 
 .h1 {
-  color: var(--header-bg);
+  color: var(--colored-text-orange);
   font-family: var(--font-logo);
 }
 
@@ -54,11 +55,10 @@
   }
   .buttonContainer {
     gap: 2.5rem;
+    margin-top: clamp(1rem, 5vw, 2rem);
   }
   .h1 {
     font-size: 6rem;
-    color: var(--header-bg);
-    font-family: var(--font-logo);
     line-height: 3rem;
   }
 
@@ -97,8 +97,6 @@
   }
   .h1 {
     font-size: clamp(6rem, 25vw, 10rem);
-    color: var(--header-bg);
-    font-family: var(--font-logo);
     line-height: clamp(2rem, 8vw, 6rem);
     margin-bottom: 0.5rem;
   }
@@ -137,8 +135,7 @@
   }
   .h1 {
     font-size: clamp(12rem, 25vw, 15rem);
-    color: var(--header-bg);
-    font-family: var(--font-logo);
+
     line-height: clamp(4rem, 8vw, 6rem);
   }
   .pLineHeight {

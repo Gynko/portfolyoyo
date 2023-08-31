@@ -1,3 +1,209 @@
 .container {
-  color: red;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.categoriesContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.buttonsContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+.text {
+  color: var(--colored-text-grey);
+}
+.equation {
+  color: var(--colored-text-whiteish);
+  font-size: 3rem;
+}
+.nameDateContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: var(--colored-text-grey);
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.entryName {
+  font-weight: bold;
+  color: var(--colored-text-whiteish);
+}
+
+.entryDate {
+  font-style: italic;
+  color: var(--colored-text-whiteish);
+}
+
+.categories {
+  color: var(--colored-text-whiteish);
+  text-align: center;
+  margin: 1rem 0;
+  color: var(--colored-text-yellow);
+}
+
+.entryHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.entryDescription {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.entrySkills {
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+}
+.skill {
+  background-color: pink;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: var(--border-radius);
+  display: inline-block;
+  color: var(--colored-text-grey);
+}
+.skillsAcquired {
+  margin-top: 10px;
+  color: var(--colored-text-whiteish);
+}
+.skillsTitle {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  background-color: black;
+  color: var(--colored-text-whiteish);
+}
+.skillsContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+.skill {
+  display: inline-block;
+  background-color: pink;
+}
+.button {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-radius: var(--border-radius);
+  font-family: var(--font-text);
+}
+
+.buttonActive {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: var(--border-radius);
+  font-family: var(--font-text);
+}
+.skillsHighlight {
+  margin: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+}
+
+.buttonActive {
+  background-color: black;
+  color: white;
+  /* ... other styles ... */
+}
+
+.categoryList {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.entry {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: var(--border-radius);
+  width: clamp(22rem, 40vw, 40rem);
+}
+
+.entryName {
+  font-weight: bold;
+  float: left;
+  font-size: clamp(0.8rem, 5vw, 1rem);
+}
+
+.entryDescription {
+  margin: 0.8rem 0 0 0.8rem;
+}
+
+.grade {
+  display: block;
+  padding: 5px;
+  background-color: var(--colored-text-green);
+}
+
+.entryDetails {
+  transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.visible {
+  max-height: 400px; /* Or whatever max height you need */
+  opacity: 1;
+}
+
+.hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* Media query for mobile width under 400px*/
+@media (max-width: 400px) {
+  .section {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: var(--header-height-tablet);
+  }
+}
+
+@media (min-width: 401px) {
+  .section {
+    margin-top: calc(var(--header-height-tablet) + 1rem);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
 }
