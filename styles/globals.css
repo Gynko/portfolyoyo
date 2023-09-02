@@ -81,4 +81,8 @@ button {
 
   /* Border Radius */
   --border-radius: 12px;
+
+  /* Buttons */
+  --button-resume-width-mobile: clamp(6rem, 9vw, 6rem);
+  --button-resume-width-tablet: clamp(9rem, 9vw, 12rem);
 }

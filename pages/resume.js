@@ -11,12 +11,30 @@ export default function Resume() {
       name: "UX design @Google @Coursera",
       type: "dev-cv",
       category: "Certifications",
-      date: ["2022", "2023"],
-      description: "Learning everything UX.",
-      skillsAcquired: ["Personas", "User Journeys", "UX research"],
+      date: ["2023", "Ongoing"],
+      description:
+        "Foundations of UX design, UX design processs: empathise, define, ideate, prototype, test.",
+      skillsAcquired: [
+        "Accessibility",
+        "Competitor analysis",
+        "Design sprints",
+        "Design systems",
+        "Figma",
+        "Key Performance Indicators",
+        "Personas",
+        "Prototyping",
+        "Typography",
+        "Usability testing",
+        "User flows",
+        "User Journeys",
+        "User stories",
+        "UX research",
+        "Value proposition",
+        "Wireframing",
+      ],
     },
     {
-      name: "Front-end Development @Gokstad akademiet",
+      name: "Front-end dev @Gokstad akademiet",
       type: "dev-cv",
       category: "Education",
       date: ["2022", "2024"],
@@ -56,6 +74,14 @@ export default function Resume() {
       description: "Learning 3d animation.",
       skillsAcquired: ["3d Modeling", "Animation", "Rigging"],
     },
+    {
+      name: "Complete NodeJS developer in 2023",
+      type: "dev-cv",
+      category: "Courses",
+      date: ["2023", "ongoing"],
+      description: "NodeJS in depth, down to the internals.",
+      skillsAcquired: ["Web servers", "Async IO", "libuv", "Module system", "Package management", "Express.js", "Node Performance", "Node and databases"],
+    },
   ];
 
   const applyFilter = (type) => {
@@ -92,7 +118,9 @@ export default function Resume() {
           }
           onClick={() => filterData("dev-cv")}
         >
-          Dev CV
+          Dev
+          <br />
+          Resume
         </button>
         <p className={styles.equation}>+</p>
         <button
@@ -101,7 +129,9 @@ export default function Resume() {
           }
           onClick={() => filterData("non-dev")}
         >
-          Non Dev
+          Non-dev
+          <br />
+          Resume
         </button>
         <p className={styles.equation}>=</p>
         <button
@@ -113,7 +143,9 @@ export default function Resume() {
             setActiveButton("all");
           }}
         >
-          All
+          Full
+          <br />
+          Resume
         </button>
       </div>
       <div className={styles.categoriesContainer}>
@@ -133,13 +165,16 @@ export default function Resume() {
                 {categoryData.map((entry) => (
                   <li key={entry.name} className={styles.entry}>
                     <div
-                      className={styles.nameDateContainer}
+                      className={styles.headerItemResume}
                       onClick={() => toggleVisibility(entry.name)}
                     >
-                      <div className={styles.entryName}>{entry.name}</div>
-                      <div className={styles.entryDate}>
-                        {entry.date.join(" - ")}
+                      <div className={styles.nameDateContainer}>
+                        <div className={styles.entryName}>{entry.name}</div>
+                        <div className={styles.entryDate}>
+                          {entry.date.join(" - ")}
+                        </div>
                       </div>
+                      <div className={styles.dropDownIcon}>⬇️</div>
                     </div>
                     <div
                       className={
