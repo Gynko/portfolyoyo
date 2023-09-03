@@ -80,7 +80,17 @@ export default function Resume() {
       category: "Courses",
       date: ["2023", "ongoing"],
       description: "NodeJS in depth, down to the internals.",
-      skillsAcquired: ["Web servers", "Async IO", "libuv", "Module system", "Package management", "Express.js", "Node Performance", "Node and databases"],
+      skillsAcquired: [
+        "Web servers",
+        "Async IO",
+        "libuv",
+        "Module system",
+        "Package management",
+        "Express.js",
+        "Node Performance",
+        "Node and databases",
+        "Semantic versioning",
+      ],
     },
   ];
 
